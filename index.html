@@ -7,44 +7,58 @@
 <style>
   :root{
     --bg:#0d1117; --panel:#161b22; --border:#30363d; --text:#e6edf3; --muted:#8b949e;
-    --accent:#3fb950; --accent2:#58a6ff;
+    --accent:#ffffff; --accent2:#9aa4ad;
+    --lam-black:#000000;
   }
   *{box-sizing:border-box;}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
+  .lam-banner{background:var(--lam-black);border-bottom:3px solid #fff;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:14px;}
+  .lam-banner img{height:22px;filter:invert(1);}
+  .lam-banner span{color:#fff;font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:600;}
   .wrap{max-width:960px;margin:0 auto;padding:48px 24px 80px;}
   header{text-align:center;margin-bottom:48px;}
-  header .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;}
+  header .eyebrow{color:#fff;font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;}
   header h1{font-size:36px;margin:8px 0 6px;}
   header p{color:var(--muted);font-size:16px;margin:4px 0;}
   .meta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px;}
   .chip{background:var(--panel);border:1px solid var(--border);border-radius:999px;padding:8px 16px;font-size:13px;color:var(--text);}
-  .chip strong{color:var(--accent2);}
+  .chip strong{color:#fff;}
   section{margin-bottom:40px;}
   h2{font-size:22px;border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:8px;}
   .track-sub{color:var(--muted);font-size:14px;margin-bottom:18px;}
   .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;}
   .card h3{margin:0 0 4px;font-size:16.5px;}
-  .card .speaker{color:var(--accent2);font-size:13px;font-weight:600;margin-bottom:8px;display:block;}
-  .card .time{color:var(--accent2);font-size:13px;font-weight:600;margin-bottom:6px;display:block;}
+  .card .speaker{color:#c9d1d9;font-size:13px;font-weight:600;margin-bottom:8px;display:block;}
+  .card .time{color:#c9d1d9;font-size:13px;font-weight:600;margin-bottom:6px;display:block;}
   .card p{margin:0;color:var(--muted);font-size:14.5px;}
-  .card a.reg{display:inline-block;margin-top:10px;font-size:13px;}
-  .why{background:linear-gradient(135deg,#132b1a,#161b22);border:1px solid #234a2c;border-radius:12px;padding:24px;}
-  .why p{color:var(--text);opacity:.9;}
+  .why{background:linear-gradient(135deg,#1a1a1a,#161b22);border:1px solid #3a3a3a;border-radius:12px;padding:24px;}
+  .why p{color:var(--text);opacity:.92;}
   ul.focus li{margin-bottom:10px;}
-  .tag{display:inline-block;background:#1f6feb22;color:var(--accent2);border:1px solid #1f6feb55;border-radius:6px;padding:2px 8px;font-size:11px;margin-right:6px;}
+  .tag{display:inline-block;background:#ffffff14;color:#e6edf3;border:1px solid #ffffff33;border-radius:6px;padding:2px 8px;font-size:11px;margin-right:6px;}
   .tbd{display:inline-block;background:#3b2f0a;color:#f0d98c;border:1px solid #6b5518;border-radius:6px;padding:2px 8px;font-size:11px;margin-right:6px;}
   footer{color:var(--muted);font-size:13px;text-align:center;border-top:1px solid var(--border);padding-top:20px;}
   .note{background:#3b2f0a;border:1px solid #6b5518;color:#f0d98c;border-radius:8px;padding:14px 18px;font-size:13.5px;}
-  a{color:var(--accent2);}
+  a{color:#9ecbff;}
+  .cta-box{background:#ffffff;color:#000000;border-radius:12px;padding:26px 28px;text-align:center;margin:30px 0;border:3px solid #000;}
+  .cta-box h3{margin:0 0 10px;font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;}
+  .cta-box p{margin:0 0 16px;color:#222;font-size:14.5px;}
+  .cta-btn{display:inline-block;background:#000;color:#fff !important;font-weight:700;padding:12px 26px;border-radius:8px;text-decoration:none;font-size:15px;letter-spacing:.02em;}
+  .cta-btn:hover{background:#222;}
 </style>
 </head>
 <body>
+
+<div class="lam-banner">
+  <img src="lam-logo.png" alt="Lam Research logo">
+  <span>Prepared for the Lam Research Team</span>
+</div>
+
 <div class="wrap">
 
 <header>
   <div class="eyebrow">GitHub Universe 2026</div>
-  <h1>Your guide, built for Lam Research</h1>
-  <p>Prepared for Matthias and team, semiconductor process and chipset engineering</p>
+  <h1>Your guide to Universe 2026</h1>
+  <p>Built for Lam Research: deposition, etch, clean, and the software teams behind atomic-scale process control</p>
   <div class="meta">
     <div class="chip">Date: <strong>Oct 28-29, 2026</strong></div>
     <div class="chip">Location: <strong>Fort Mason Center</strong>, San Francisco</div>
@@ -53,14 +67,21 @@
   </div>
 </header>
 
+<div class="cta-box">
+  <h3>Before you go: build your personal agenda</h3>
+  <p>Universe breakouts fill up and run in parallel across the venue. Each of the three of you needs to build your own schedule in the official portal now to lock in seats, rooms, and times.</p>
+  <a class="cta-btn" href="https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog" target="_blank" rel="noopener">Build Your Agenda in the App &rarr;</a>
+</div>
+
 <section class="why">
   <h2 style="border:none;margin-bottom:8px;">Why this matters for Lam Research</h2>
-  <p>The Universe 2026 session catalog is now live, and it leans heavily into two things directly relevant to your team: configuring Copilot to handle real, complex engineering work (not just autocomplete), and securing AI agents and MCP servers in enterprise environments. For a company protecting proprietary chipset process IP while scaling AI-assisted engineering, this is the most actionable Universe lineup in a few years.</p>
+  <p>Lam's roadmap runs through atomic-scale deposition and etch, on structures that keep getting smaller and more three-dimensional (think gate-all-around transistors and backside power delivery). That means Lam's engineering org lives at the intersection of real-time control software, sensor-driven process feedback loops, and a growing wall of tool-generated data that needs AI/ML to turn into yield and uptime gains.</p>
+  <p style="margin-top:12px;">It also means two things are non-negotiable: protecting the IP in that control software and process data (especially under export-control constraints), and scaling engineering tooling across a global R&D and manufacturing footprint as Lam invests billions in new lab capacity. The Universe 2026 catalog maps directly onto both problems, which is why this year's lineup is unusually relevant to your team.</p>
 </section>
 
 <section>
   <h2>Day 1: Wednesday, October 28</h2>
-  <div class="track-sub">Confirmed event structure. Exact breakout time slots are assigned in each attendee's personal schedule builder closer to the event.</div>
+  <div class="track-sub">Confirmed event structure. Exact breakout time slots are assigned per attendee in the personal schedule builder.</div>
   <div class="card">
     <span class="time">9:00 AM</span>
     <h3>Opening Keynote</h3>
@@ -85,62 +106,55 @@
 
 <section>
   <h2>Recommended breakout sessions</h2>
-  <div class="track-sub">Real session titles from the Universe 2026 catalog, grouped by theme. Times/rooms appear once you build your personal schedule.</div>
+  <div class="track-sub">Real session titles from the Universe 2026 catalog, selected for relevance to semiconductor equipment engineering.</div>
 
   <div class="card">
-    <span class="tag">AI / Copilot configuration</span>
+    <span class="tag">AI / real-time control software</span>
     <h3>Stop Prompting, Start Delegating: Configure Copilot to Own the Work</h3>
     <span class="speaker">Ken Muse and Mickey Gousset, GitHub</span>
-    <p>Hands-on session layering Copilot's full stack onto a TypeScript app so you leave knowing which capability fits which task, and can delegate more, prompt less. Directly useful for complex, multi-part engineering workflows.</p>
+    <p>Hands-on session configuring Copilot to own complex, multi-step engineering tasks end to end. Directly applicable to the kind of layered, real-time process-control codebases running Lam's deposition and etch tools.</p>
   </div>
 
   <div class="card">
-    <span class="tag">AI / Engineering</span>
+    <span class="tag">AI / model reliability</span>
     <h3>Inside GitHub Copilot's Coding Harness: Optimizing Across Every Model</h3>
     <span class="speaker">Julia Kasper, Microsoft</span>
-    <p>How the Copilot team evaluates and optimizes its agent across OpenAI, Claude, and Gemini models, using reproducible benchmarks and LLM-graded regression testing.</p>
+    <p>How Copilot is evaluated and optimized across OpenAI, Claude, and Gemini using reproducible benchmarks and regression testing. A useful reference for teams validating AI/ML models against sensor and yield data.</p>
   </div>
 
   <div class="card">
-    <span class="tag">Security</span>
+    <span class="tag">Security / export-controlled IP</span>
     <h3>Open Pull Requests, Don't Merge Them: Fine-Grained Authorization for Hosted MCP Servers</h3>
     <span class="speaker">Nick Taylor, Pomerium</span>
-    <p>A live demo of identity-aware, per-identity authorization in front of hosted MCP servers, so an agent can open a pull request but a human still controls the merge. Relevant to protecting proprietary process and firmware code.</p>
+    <p>A live demo of identity-aware, per-identity authorization in front of hosted MCP servers, so an agent can draft changes but a human still controls the merge. Directly relevant to guarding proprietary process recipes, firmware, and export-controlled code as agentic workflows expand.</p>
   </div>
 
   <div class="card">
-    <span class="tag">Enterprise adoption</span>
+    <span class="tag">Enterprise adoption at scale</span>
     <h3>Building AI Fluency at UPS</h3>
     <span class="speaker">Jared Hatfield, UPS</span>
-    <p>How UPS moved developers from Copilot awareness to real fluency at enterprise scale, and where to focus first. A useful adoption playbook for a large distributed engineering org.</p>
+    <p>How a large, operationally complex enterprise moved developers from Copilot awareness to real fluency, and where to focus first. A useful adoption model as Lam scales engineering tooling across a growing global R&D and fab network.</p>
   </div>
 
   <div class="card">
-    <span class="tag">DevOps workflow</span>
+    <span class="tag">Engineering workflow</span>
     <h3>Stop Waiting on Your Own Pull Requests: GitHub Stacked Pull Requests in Practice</h3>
     <span class="speaker">Sameen Karim, GitHub</span>
-    <p>Builds a stack of smaller, dependent pull requests with the GitHub CLI, reviews it on github.com, and merges each as it's ready. A concrete workflow improvement for review-heavy engineering teams.</p>
+    <p>Splits large changes into smaller, dependent pull requests that move through review efficiently. Useful for teams making incremental changes to safety-critical, long-lived equipment control code.</p>
   </div>
 
   <div class="card">
-    <span class="tag">AI at scale</span>
+    <span class="tag">AI operations at scale</span>
     <h3>From Writing Code to Managing Agents: Scaling 50+ Services at GitHub</h3>
     <span class="speaker">Anjuan Simmons, GitHub</span>
-    <p>How GitHub's own Lifecycle team moved from hand-coding fixes across 50+ services to an agentic pipeline using GitHub Actions and Copilot, including where automation pays off and where engineers still write code by hand.</p>
+    <p>How GitHub's own team moved from manual fixes across 50+ services to an agentic pipeline for classification, research, and draft fixes. A concrete pattern for scaling engineering support across a large installed base of tools.</p>
   </div>
 
   <div class="card">
-    <span class="tag">Panel</span>
+    <span class="tag">Panel: where AI is heading</span>
     <h3>The View from the Labs: What's Next for AI-Assisted Development</h3>
     <span class="speaker">Cara Phillips, Anthropic; Rohan Varma, OpenAI; Kate Catlin, GitHub</span>
-    <p>A candid panel with the labs that power GitHub Copilot on where AI-assisted development capability is heading over the next two years.</p>
-  </div>
-
-  <div class="card">
-    <span class="tag">Community vote</span>
-    <h3>The Human Side of AI: How Building Community Drove 94% Copilot Adoption</h3>
-    <span class="speaker">Brittany Istenes, Independent</span>
-    <p>One of three sessions up for a community vote to reach the main stage: how a large financial services firm hit 94% Copilot adoption by focusing on human connection, not just better models.</p>
+    <p>A candid panel with the labs behind GitHub Copilot on where AI-assisted development capability is heading over the next two years, useful context for Lam's own AI/ML and digital-twin roadmap.</p>
   </div>
 
   <p style="color:var(--muted);font-size:13.5px;margin-top:4px;">
@@ -167,21 +181,27 @@
 </section>
 
 <section>
-  <h2>Recommended focus for your team</h2>
+  <h2>Recommended focus for the team</h2>
   <ul class="focus">
-    <li><strong>Copilot configuration for complex tasks:</strong> the "Stop Prompting, Start Delegating" and coding-harness sessions, given firmware/embedded codebases mix multiple languages.</li>
-    <li><strong>Security for AI agents and IP protection:</strong> the MCP authorization session, directly relevant to safeguarding chipset process IP as agentic workflows expand.</li>
-    <li><strong>Enterprise adoption playbook:</strong> the UPS fluency session, as a model for scaling Copilot adoption across a large, distributed engineering org.</li>
+    <li><strong>Real-time control software and AI/ML for process tuning:</strong> the Copilot configuration and coding-harness sessions, given how tightly Lam's deposition/etch software is coupled to live sensor feedback.</li>
+    <li><strong>Protecting process IP and export-controlled code:</strong> the MCP authorization session, as agentic workflows start touching proprietary recipes and firmware.</li>
+    <li><strong>Scaling engineering tooling globally:</strong> the UPS fluency session and the GitHub 50+ services session, as models for rolling out AI-assisted engineering across a growing global R&D and fab footprint.</li>
     <li><strong>1:1 time with your GitHub account team:</strong> worth booking ahead of the event to align Universe takeaways with your 2027 renewal and expansion plans.</li>
   </ul>
 </section>
 
+<div class="cta-box">
+  <h3>Reminder: build your agenda now</h3>
+  <p>Seats and rooms are first-come. Each attendee should register their own session picks in the app before October 28.</p>
+  <a class="cta-btn" href="https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog" target="_blank" rel="noopener">Build Your Agenda in the App &rarr;</a>
+</div>
+
 <div class="note">
-  Note: The Universe 2026 session catalog has launched, and the titles above are real, current sessions. Exact day/time/room assignments are set per attendee in the personal schedule builder linked above, so we recommend each of the three of you build your own calendar directly. The EBC session is still pending confirmation; happy hour venues and RSVP links will be shared once finalized.
+  Note: The Universe 2026 session catalog has launched, and the titles above are real, current sessions. Exact day/time/room assignments are set per attendee in the personal schedule builder linked above. The EBC session is still pending confirmation; happy hour venues and RSVP links will be shared once finalized.
 </div>
 
 <footer style="margin-top:32px;">
-  Prepared by Matt Ziobro (GitHub) for Matthias and team, Lam Research Corporation ·
+  Prepared by the GitHub account team for Lam Research Corporation ·
   <a href="https://githubuniverse.com">githubuniverse.com</a>
 </footer>
 
