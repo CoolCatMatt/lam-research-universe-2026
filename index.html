@@ -11,7 +11,7 @@
   }
   *{box-sizing:border-box;}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
-  .wrap{max-width:920px;margin:0 auto;padding:48px 24px 80px;}
+  .wrap{max-width:960px;margin:0 auto;padding:48px 24px 80px;}
   header{text-align:center;margin-bottom:48px;}
   header .eyebrow{color:var(--accent);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px;}
   header h1{font-size:36px;margin:8px 0 6px;}
@@ -20,11 +20,14 @@
   .chip{background:var(--panel);border:1px solid var(--border);border-radius:999px;padding:8px 16px;font-size:13px;color:var(--text);}
   .chip strong{color:var(--accent2);}
   section{margin-bottom:40px;}
-  h2{font-size:22px;border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:18px;}
+  h2{font-size:22px;border-bottom:1px solid var(--border);padding-bottom:10px;margin-bottom:8px;}
+  .track-sub{color:var(--muted);font-size:14px;margin-bottom:18px;}
   .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:20px 22px;margin-bottom:14px;}
-  .card h3{margin:0 0 6px;font-size:17px;}
+  .card h3{margin:0 0 4px;font-size:16.5px;}
+  .card .speaker{color:var(--accent2);font-size:13px;font-weight:600;margin-bottom:8px;display:block;}
   .card .time{color:var(--accent2);font-size:13px;font-weight:600;margin-bottom:6px;display:block;}
   .card p{margin:0;color:var(--muted);font-size:14.5px;}
+  .card a.reg{display:inline-block;margin-top:10px;font-size:13px;}
   .why{background:linear-gradient(135deg,#132b1a,#161b22);border:1px solid #234a2c;border-radius:12px;padding:24px;}
   .why p{color:var(--text);opacity:.9;}
   ul.focus li{margin-bottom:10px;}
@@ -46,17 +49,18 @@
     <div class="chip">Date: <strong>Oct 28-29, 2026</strong></div>
     <div class="chip">Location: <strong>Fort Mason Center</strong>, San Francisco</div>
     <div class="chip">Format: In-person + virtual</div>
-    <div class="chip">Pricing: From <strong>$1,399</strong></div>
+    <div class="chip">Your 3 passes: <strong>Complimentary</strong> (GitHub-provided)</div>
   </div>
 </header>
 
 <section class="why">
   <h2 style="border:none;margin-bottom:8px;">Why this matters for Lam Research</h2>
-  <p>Universe is GitHub's flagship event, where the product roadmap, AI/Copilot direction, and enterprise security investments are announced first. For a company building chipset process equipment, the highest-value themes are AI-assisted engineering for complex, safety-critical codebases, protecting IP (source, firmware, test data) with GitHub Advanced Security, and governing and scaling GitHub across global hardware and software engineering teams.</p>
+  <p>The Universe 2026 session catalog is now live, and it leans heavily into two things directly relevant to your team: configuring Copilot to handle real, complex engineering work (not just autocomplete), and securing AI agents and MCP servers in enterprise environments. For a company protecting proprietary chipset process IP while scaling AI-assisted engineering, this is the most actionable Universe lineup in a few years.</p>
 </section>
 
 <section>
   <h2>Day 1: Wednesday, October 28</h2>
+  <div class="track-sub">Confirmed event structure. Exact breakout time slots are assigned in each attendee's personal schedule builder closer to the event.</div>
   <div class="card">
     <span class="time">9:00 AM</span>
     <h3>Opening Keynote</h3>
@@ -80,10 +84,76 @@
 </section>
 
 <section>
+  <h2>Recommended breakout sessions</h2>
+  <div class="track-sub">Real session titles from the Universe 2026 catalog, grouped by theme. Times/rooms appear once you build your personal schedule.</div>
+
+  <div class="card">
+    <span class="tag">AI / Copilot configuration</span>
+    <h3>Stop Prompting, Start Delegating: Configure Copilot to Own the Work</h3>
+    <span class="speaker">Ken Muse and Mickey Gousset, GitHub</span>
+    <p>Hands-on session layering Copilot's full stack onto a TypeScript app so you leave knowing which capability fits which task, and can delegate more, prompt less. Directly useful for complex, multi-part engineering workflows.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">AI / Engineering</span>
+    <h3>Inside GitHub Copilot's Coding Harness: Optimizing Across Every Model</h3>
+    <span class="speaker">Julia Kasper, Microsoft</span>
+    <p>How the Copilot team evaluates and optimizes its agent across OpenAI, Claude, and Gemini models, using reproducible benchmarks and LLM-graded regression testing.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Security</span>
+    <h3>Open Pull Requests, Don't Merge Them: Fine-Grained Authorization for Hosted MCP Servers</h3>
+    <span class="speaker">Nick Taylor, Pomerium</span>
+    <p>A live demo of identity-aware, per-identity authorization in front of hosted MCP servers, so an agent can open a pull request but a human still controls the merge. Relevant to protecting proprietary process and firmware code.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Enterprise adoption</span>
+    <h3>Building AI Fluency at UPS</h3>
+    <span class="speaker">Jared Hatfield, UPS</span>
+    <p>How UPS moved developers from Copilot awareness to real fluency at enterprise scale, and where to focus first. A useful adoption playbook for a large distributed engineering org.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">DevOps workflow</span>
+    <h3>Stop Waiting on Your Own Pull Requests: GitHub Stacked Pull Requests in Practice</h3>
+    <span class="speaker">Sameen Karim, GitHub</span>
+    <p>Builds a stack of smaller, dependent pull requests with the GitHub CLI, reviews it on github.com, and merges each as it's ready. A concrete workflow improvement for review-heavy engineering teams.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">AI at scale</span>
+    <h3>From Writing Code to Managing Agents: Scaling 50+ Services at GitHub</h3>
+    <span class="speaker">Anjuan Simmons, GitHub</span>
+    <p>How GitHub's own Lifecycle team moved from hand-coding fixes across 50+ services to an agentic pipeline using GitHub Actions and Copilot, including where automation pays off and where engineers still write code by hand.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Panel</span>
+    <h3>The View from the Labs: What's Next for AI-Assisted Development</h3>
+    <span class="speaker">Cara Phillips, Anthropic; Rohan Varma, OpenAI; Kate Catlin, GitHub</span>
+    <p>A candid panel with the labs that power GitHub Copilot on where AI-assisted development capability is heading over the next two years.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag">Community vote</span>
+    <h3>The Human Side of AI: How Building Community Drove 94% Copilot Adoption</h3>
+    <span class="speaker">Brittany Istenes, Independent</span>
+    <p>One of three sessions up for a community vote to reach the main stage: how a large financial services firm hit 94% Copilot adoption by focusing on human connection, not just better models.</p>
+  </div>
+
+  <p style="color:var(--muted);font-size:13.5px;margin-top:4px;">
+    Full catalog, speaker bios, and the personal schedule builder:
+    <a href="https://reg.githubuniverse.com/flow/github/universe26/attendee-portal/page/sessioncatalog" target="_blank" rel="noopener">reg.githubuniverse.com session catalog</a>
+  </p>
+</section>
+
+<section>
   <h2>Day 2: Thursday, October 29</h2>
   <div class="card">
-    <h3>General sessions and breakouts</h3>
-    <p>Continued programming across AI-assisted engineering, enterprise governance and scale, platform engineering, and security, drawn from the same tracks as Day 1.</p>
+    <h3>General sessions and breakouts continue</h3>
+    <p>Continued programming across the same tracks (AI-assisted engineering, security, enterprise adoption, open source), plus additional Ship & Tell sessions where teams present what they've built.</p>
   </div>
   <div class="card">
     <h3>Expo Hall continues</h3>
@@ -99,15 +169,15 @@
 <section>
   <h2>Recommended focus for your team</h2>
   <ul class="focus">
-    <li><strong>Security and IP protection:</strong> sessions on secret/code scanning, given the sensitivity of chipset process IP.</li>
-    <li><strong>AI-assisted engineering:</strong> Copilot for embedded/firmware and multi-language systems.</li>
-    <li><strong>Scaling GitHub org-wide:</strong> governance, provisioning, and adoption playbooks as you grow seat coverage.</li>
+    <li><strong>Copilot configuration for complex tasks:</strong> the "Stop Prompting, Start Delegating" and coding-harness sessions, given firmware/embedded codebases mix multiple languages.</li>
+    <li><strong>Security for AI agents and IP protection:</strong> the MCP authorization session, directly relevant to safeguarding chipset process IP as agentic workflows expand.</li>
+    <li><strong>Enterprise adoption playbook:</strong> the UPS fluency session, as a model for scaling Copilot adoption across a large, distributed engineering org.</li>
     <li><strong>1:1 time with your GitHub account team:</strong> worth booking ahead of the event to align Universe takeaways with your 2027 renewal and expansion plans.</li>
   </ul>
 </section>
 
 <div class="note">
-  Note: The full official session catalog for Universe 2026 has not yet been published, so this agenda reflects only confirmed event structure (keynotes, expo, happy hours) plus the themes most relevant to Lam Research. The EBC session is still pending confirmation. We will share exact session titles, times, and EBC details as soon as they are finalized.
+  Note: The Universe 2026 session catalog has launched, and the titles above are real, current sessions. Exact day/time/room assignments are set per attendee in the personal schedule builder linked above, so we recommend each of the three of you build your own calendar directly. The EBC session is still pending confirmation; happy hour venues and RSVP links will be shared once finalized.
 </div>
 
 <footer style="margin-top:32px;">
